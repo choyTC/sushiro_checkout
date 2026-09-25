@@ -17,7 +17,7 @@ jobs:
           channel: 'stable'
 
       - name: Build Flutter Web
-        run: flutter build web --base-href "/${{ github.event.sushiro_checkout }}/"
+        run: flutter build web --base-href "/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
